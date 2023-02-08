@@ -14,7 +14,7 @@ const useKeepScroll = (scrollRef) => {
 
     if (scrollValue) scrollRef.current.scrollTop = +scrollValue;
 
-    const handleRefresh = () => sessionStorage.clear();
+    const handleRefresh = () => sessionStorage.removeItem('scrollY');
     window.addEventListener('beforeunload', handleRefresh);
 
     return () => window.removeEventListener('beforeunload', handleRefresh);
