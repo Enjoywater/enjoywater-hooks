@@ -1,6 +1,6 @@
 {
   "name": "@enjoywater-hook/use-keep-scroll",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "React hook to maintain scroll position using session storage when returning to the page.",
   "main": "index.js",
   "scripts": {
