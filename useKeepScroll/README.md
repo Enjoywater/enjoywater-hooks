@@ -19,6 +19,10 @@ If you want to keep the scroll position of the window, see [here](https://develo
 
 ```
 $ npm install @enjoywater-hook/use-keep-scroll
+
+or
+
+$ yarn add @enjoywater-hook/use-keep-scroll
 ```
 
 <br />
