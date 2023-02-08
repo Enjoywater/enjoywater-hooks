@@ -6,8 +6,6 @@ React hook to maintain scroll position using session storage when returning to t
 
 ## 📌
 
----
-
 useKeepScroll is custom React-Hook. <br />
 So it works on only React environment. <br />
 
