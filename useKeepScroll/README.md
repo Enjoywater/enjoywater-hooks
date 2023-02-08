@@ -18,7 +18,7 @@ If you want to keep the scroll position of the window, see [here](https://develo
 ## 🛠️ &nbsp; Installation
 
 ```
-$ npm install @enjoywater-hooks/use-keep-scroll
+$ npm install @enjoywater-hook/use-keep-scroll
 ```
 
 <br />
@@ -62,7 +62,7 @@ export default useKeepScroll;
 
 ## 📝 &nbsp; How To Use
 
-1. Add `import useKeepScroll from "@enjoywater-hooks/use-keep-scroll"` in your component.
+1. Add `import useKeepScroll from "@enjoywater-hook/use-keep-scroll"` in your component.
 2. Add a `ref` to the scrolling component.
 3. Put the `ref` component as an argument of `useKeepScroll()`.
 4. Execute the returned `setScroll` function wherever you want.
@@ -74,7 +74,7 @@ export default useKeepScroll;
 An example of maintaining the scroll position of the list screen when moving to a detail page.
 
 ```javascript
-import useKeepScroll from '@enjoywater-hooks/use-keep-scroll';
+import useKeepScroll from '@enjoywater-hook/use-keep-scroll';
 
 function Component() {
   const listRef = useRef(null);
