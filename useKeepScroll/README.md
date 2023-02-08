@@ -34,17 +34,21 @@ const useKeepScroll = (scrollRef) => {
   const setScroll = useCallback(() => {
     if (!scrollRef.current) return;
 
-    sessionStorage.setItem('scrollY', `${scrollRef.current.scrollTop}`); // Save the current scroll position of scrollRef in session storage.
+    // Save the current scroll position of scrollRef in session storage.
+    sessionStorage.setItem('scrollY', `${scrollRef.current.scrollTop}`);
   }, [scrollRef]);
 
   useEffect(() => {
     if (!scrollRef.current) return;
 
-    const scrollValue = sessionStorage.getItem('scrollY'); // Get the saved scroll position.
+    // Get the saved scroll position.
+    const scrollValue = sessionStorage.getItem('scrollY');
 
-    if (scrollValue) scrollRef.current.scrollTop = +scrollValue; // Change the scroll position of scrollRef.
+    // Change the scroll position of scrollRef.
+    if (scrollValue) scrollRef.current.scrollTop = +scrollValue;
 
-    const handleRefresh = () => sessionStorage.removeItem('scrollY'); // When refreshing, the scroll value in the session storage is initialized.
+    // When refreshing, the scroll value in the session storage is initialized.
+    const handleRefresh = () => sessionStorage.removeItem('scrollY');
     window.addEventListener('beforeunload', handleRefresh);
 
     return () => window.removeEventListener('beforeunload', handleRefresh);
