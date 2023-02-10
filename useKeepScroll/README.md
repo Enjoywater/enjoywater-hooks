@@ -85,7 +85,7 @@ function Component() {
 
   const setScroll = useKeepScroll(listRef);
 
-  const handleItemClick = (id: number) => {
+  const handleItemClick = () => {
     setScroll();
     push('/detail');
   };
