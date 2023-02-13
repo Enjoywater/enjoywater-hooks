@@ -1,4 +1,4 @@
-# useKeepScroll
+# useLazyImage
 
 React hook for image lazy loading.
 
