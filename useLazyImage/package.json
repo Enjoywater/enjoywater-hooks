@@ -1,0 +1,28 @@
+{
+  "name": "@enjoywater-hook/use-lazy-image",
+  "version": "1.0.0",
+  "description": "React hooks for image lazy loading",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "react",
+    "hooks",
+    "image",
+    "lazy loading",
+    "image lazy loading",
+    "useLazyImage"
+  ],
+  "author": "enjoywater",
+  "license": "MIT",
+  "homepage": "https://github.com/Enjoywater/enjoywater-hooks",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Enjoywater/enjoywater-hooks.git"
+  },
+  "peerDependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}
