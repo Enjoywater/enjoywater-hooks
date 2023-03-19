@@ -12,3 +12,5 @@ Useful custom hooks to help your React project
       React hook to maintain scroll position using session storage when returning to the page.
 - [x] [useLazyImage](https://github.com/Enjoywater/enjoywater-hooks/tree/main/useLazyImage) <br />
       React hook for image lazy loading.
+- [x] [usePagination](https://github.com/Enjoywater/enjoywater-hooks/tree/main/usePagination) <br />
+      React hook for pagination.
