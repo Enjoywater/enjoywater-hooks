@@ -1,0 +1,26 @@
+{
+  "name": "use-pagination",
+  "version": "1.0.0",
+  "description": "React hook for pagination",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "react",
+    "hooks",
+    "pagination",
+    "usePagination"
+  ],
+  "author": "Enjoywater",
+  "license": "MIT",
+  "homepage": "https://github.com/Enjoywater/enjoywater-hooks",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Enjoywater/enjoywater-hooks.git"
+  },
+  "peerDependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}
