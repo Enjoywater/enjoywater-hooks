@@ -12,11 +12,11 @@ So it works on only React environment. <br />
 
 <br />
 
-## 🔍 &nbsp; Detail
+## 🔍 &nbsp; Detail
 
 1. Util function in hooks.
 
-This function returns a group of pages with the structure shown below.
+This function returns a group of pages with the structure shown below. <br />
 `[ [1, 2, 3, 4, 5], [6, 7, 8, 9, 10], [11, 12, 13, 14, 15], [16, 17, 18, 19, 20], ... ]`
 
 ```javascript
@@ -43,10 +43,12 @@ const formatPageArray = (totalCount, pageGroupCount, productCount = 10) => {
 2. Parameter and Variable.
 
 ```javascript
+
 // page - current page
 // totalCount - number of items on all pages
 // pageGroupCount - The number of page numbers to be displayed on one page
 const usePagination = (page, totalCount, pageGroupCount = 5) => {
+
   // Returns the entire group of pages organized in a double array.
   const pageGroups = useMemo(
     () => formatPageArray(totalCount, pageGroupCount),
@@ -88,6 +90,7 @@ const usePagination = (page, totalCount, pageGroupCount = 5) => {
 };
 
 export default usePagination;
+
 ```
 
 <br />
@@ -95,6 +98,7 @@ export default usePagination;
 ## 📝 &nbsp; How To Use
 
 ```javascript
+
 const Pagination = ({ page, totalCount, pageGroupCount }: PaginationProps) => {
   const { currentPageGroup, prevPageGroup, nextPageGroup, isFirst, isLast } =
     usePagination(page, totalCount, pageGroupCount);
@@ -128,4 +132,8 @@ const Pagination = ({ page, totalCount, pageGroupCount }: PaginationProps) => {
 };
 
 export default Pagination;
+
 ```
+
+
+![pagination](https://user-images.githubusercontent.com/46430257/230025507-86916bfa-0f2b-407b-a17e-b931225bc0e5.gif)
